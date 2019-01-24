@@ -1,0 +1,31 @@
+#menu {
+  flex: 0 0 250px;
+  .item {
+    cursor: pointer;
+    font-size: 1em;
+    padding: 15px 30px;
+    transition: all 250ms;
+    &:hover {
+      padding: 15px 45px;
+      background-color: transparentize(#f6f6f6, .8);
+    }
+  }
+}
+
+ul {
+  height: 100%;
+  list-style-type: none;
+  padding: 10px;
+  border-right: solid purple thin;
+  overflow-y: auto;
+}
+
+.li:active, li:hover {
+  color: lightblue;
+}
+
+.active {
+  background: url("../../images/arrow.png") no-repeat left center;
+  background-size: 18px 18px;
+  padding-left: 45px !important;
+}
