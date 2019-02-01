@@ -1,9 +1,11 @@
 import React from 'react';
 
 const Content05 = () => (
-    <p className="animated fadeIn">
-        Content 05 here
-    </p>
+    <div className="animated fadeIn">
+        <p>
+            Content 05 here
+        </p>
+    </div>
 );
 
 export default Content05;

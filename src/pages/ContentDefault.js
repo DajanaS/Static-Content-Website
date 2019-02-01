@@ -1,9 +1,11 @@
 import React from 'react';
 
 const ContentDefault = () => (
-    <p className="animated fadeIn">
-        Welcome page here
-    </p>
+    <div className="animated fadeIn">
+        <p>
+            Welcome page here
+        </p>
+    </div>
 );
 
 export default ContentDefault;

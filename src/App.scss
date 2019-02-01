@@ -8,9 +8,7 @@ $easing: cubic-bezier(.6, .05, .28, .91);
 }
 
 body {
-  background: url("./images/background.png");
-  background-size: cover;
-  font-size: 16px;
+  background-image: linear-gradient(to bottom, #6DD5FA, purple);
   height: 100vh;
 }
 
@@ -40,4 +38,26 @@ body {
 
 #root {
   height: 100%;
+}
+
+#all {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#error {
+  display: none;
+}
+
+@media only screen and (max-width: 540px) {
+  * {
+    display: none;
+  }
+
+  html, body, #root, #error {
+    display: block;
+    color: lightcoral;
+    background: black;
+  }
 }

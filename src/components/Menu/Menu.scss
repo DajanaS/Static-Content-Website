@@ -16,12 +16,12 @@ ul {
   height: 100%;
   list-style-type: none;
   padding: 10px;
-  border-right: solid purple thin;
+  border-right: solid darkred thin;
   overflow-y: auto;
 }
 
-.li:active, li:hover {
-  color: lightblue;
+li:active, li:hover {
+  color: darkred;
 }
 
 .active {
