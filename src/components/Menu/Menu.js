@@ -8,7 +8,7 @@ class Menu extends Component {
         const itemsArray = Pages.map((item, i) => {
             return <li key={i} className={activeContentId === i ? 'active item' : 'item'}
                        onClick={() => onMenuItemClick(i)}>
-                Content {i}
+                {item.title}
             </li>
         });
         return (

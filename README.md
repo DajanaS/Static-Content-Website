@@ -46,7 +46,11 @@ change the [favicon.ico](./public/favicon.ico)!
 
 We need to adjust this site in order to have our own content displayed.
 - For setting the content the only file that needs to be modified is [PagesIndex.js](./src/components/Content/PagesIndex.js).
-- The pages are under the folder [/pages](./src/pages) and there we set the content for each.
+Set the variable `maxPages` to be equal on the number of pages that you would like to have. By default there is also the Welcome page included.
+If you don't need a welcome page, then please don't forget to change the default value of `activeContentId: 0` in the
+state inside [Main Container](./src/components/MainContainer/MainContainer.js), if you don't have 0 page then set 1 here, or similar.
+There is an example of how to provide titles that will be showing in the menu, so just continue following the same pattern. 
+- The pages are placed in the folder [/pages](./src/pages) and there we set the content for each.
 - For better preview of some source code examples, I suggest to use the `<code>` tag around the code blocks.
 - The project is created in React and it is using JSX language, which is Javascript in the background, not HTML. This
 means that there are small differences when setting the content within the .js classes. One example is using `className`
